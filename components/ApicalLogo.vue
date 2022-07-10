@@ -1,15 +1,16 @@
 <template>
   <svg
     id="Logo"
+    role="img"
+    alt="Apical Logo"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     x="0px"
     y="0px"
     viewBox="0 0 1133.86 1133.86"
-    style="enable-background: new 0 0 1133.86 1133.86"
     xml:space="preserve"
-    class="apical-logo"
+    :style="{ fill: color }"
   >
     <g>
       <path
@@ -91,8 +92,16 @@
   </svg>
 </template>
 
-<style>
-.apical-logo {
-  height: 280px;
+<script>
+export default {
+  name: 'ApicalLogo',
+  props: {
+    color: {
+      type: String,
+      default: '#8CF339',
+    },
+  },
 }
-</style>
+</script>
+
+<style></style>
