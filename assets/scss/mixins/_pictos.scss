@@ -1,0 +1,87 @@
+// font name of pictos
+$ff-picto: 'fontello' !default;
+// all pictos in config.json of fontello
+$pictos: () !default;
+
+// base functions
+@function dec-to-hex($d) {
+    $hexVals: "A" "B" "C" "D" "E" "F";
+    $base: 16;
+    $quotient: $d;
+    $result: "";
+    @if $d == 0 {
+        $result: "00";
+    }
+    @while $quotient != 0 {
+        $mod: $quotient % $base;
+        $quotient: floor(calc($quotient / $base));
+        @if $mod > 9 {
+            $mod: nth($hexVals, $mod - 9);
+        }
+        @if $d < $base {
+            $result: "0" + $mod;
+        } @else {
+            $result: $mod + $result;
+        }
+    }
+    @return $result;
+}
+@function get-picto-code($name) {
+    @return map-get($pictos, $name);
+}
+@function u-picto($name) {
+    @return #{'"' + '\\' + '#{dec-to-hex(get-picto-code($name))}' + '"'};
+}
+
+
+// base mixins
+@mixin picto-base() {
+    font-family: $ff-picto;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    // width: 1em;
+    // margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    // line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    // margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+%picto-base {
+    @include picto-base();
+}
+
+// the mixin
+@mixin picto($name:false, $extend: true) {
+    @if($name != false) {
+        content: u-picto($name);
+    }
+
+    @if($extend == true) {
+        @extend %picto-base;
+    } @else if($extend == false) {
+        @include picto-base();
+    }
+}

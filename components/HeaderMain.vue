@@ -1,7 +1,8 @@
 <template>
   <header>
     <div class="container">
-      <ApicalLogo :color="'#c3ceb6'" class="apical-logo" />
+      <ApicalLogo :color="'#ffffff'" class="apical-logo" />
+      <div class="menu-icon"></div>
     </div>
   </header>
 </template>
@@ -10,7 +11,7 @@
 export default {}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
   position: absolute;
   top: 0;
@@ -20,14 +21,25 @@ header {
   overflow: hidden;
   width: 100%;
   display: flex;
-  border: solid 1px red;
-}
-.container {
-  width: 340px;
-  margin: 0 auto;
-  border: solid 1px green;
-}
-.apical-logo {
-  width: 64px;
+  /* border: solid 1px red; */
+  .container {
+    width: 380px;
+    margin: 0 auto;
+    /* border: solid 1px green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .apical-logo {
+      width: 64px;
+    }
+    .menu-icon {
+      margin-right: 10%;
+      &::before {
+        @include picto('menu');
+        font-size: 2rem;
+        color: #ffffff;
+      }
+    }
+  }
 }
 </style>

@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'apical',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'fr',
     },
     meta: [
       { charset: 'utf-8' },
@@ -20,6 +20,14 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
+  styleResources: {
+    scss: [
+      '@/assets/scss/_fonts.scss',
+      '@/assets/scss/_variables.scss',
+      '@/assets/scss/_mixins.scss',
+    ],
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
@@ -32,6 +40,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://github.com/nuxt-community/style-resources-module/
+    '@nuxtjs/style-resources',
   ],
 
   router: {
