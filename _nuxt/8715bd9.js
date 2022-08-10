@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{363:function(e,n,t){"use strict";t.r(n);var l={name:"BlocTitle"},o=t(46),component=Object(o.a)(l,(function(){var e=this._self._c;return e("div",[e("TitleBox")],1)}),[],!1,null,"edf8e8ae",null);n.default=component.exports;installComponents(component,{TitleBox:t(364).default})}}]);
