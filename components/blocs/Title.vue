@@ -1,6 +1,6 @@
 <template>
   <div id="bloc-title">
-    <div class="logo"><AssetsApicalLogo :color="'#8df3392f'" /></div>
+    <div class="logo"><img src="~/assets/images/logo.svg" alt="" /></div>
     <Title />
   </div>
 </template>
@@ -19,6 +19,7 @@ export default {
   align-items: center;
   position: relative;
   margin: 9% auto;
+  overflow-x: clip;
   .logo {
     position: absolute;
     top: -165px;
