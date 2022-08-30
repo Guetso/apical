@@ -1,11 +1,7 @@
 <template>
   <nav>
     <div class="container w-full sm:w-5/6 lg:w-full">
-      <AssetsApicalLogo
-        :color="'#00662b'"
-        class="apical-logo"
-        alt="Logo Apical"
-      />
+      <AssetsApicalLogo :color="'#00662b'" class="apical-logo" />
       <div class="menu-icon">
         <div class="icon">
           <div></div>

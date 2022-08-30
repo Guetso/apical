@@ -14,11 +14,36 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Elagueur dans le finistère',
+        content:
+          "L'entreprise Apical intervient pour les travaux de taille, d'élagage ou d'abattage de vos arbres dans le finistère.",
       },
+      { name: 'Language', content: 'fr' },
       { name: 'format-detection', content: 'telephone=no' },
+      { property: 'og:title', content: 'Apical Elagage' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://www.apical-elagage-29.fr' },
+      { property: 'og:image', content: '/apical-black-logo' },
+      {
+        property: 'og:description',
+        content:
+          "L'entreprise Apical intervient pour les travaux de taille, d'élagage ou d'abattage de vos arbres dans le finistère.",
+      },
+      { property: 'og:locale', content: 'fr_FR' },
+      { property: 'og:site_name', content: 'Apical Elagage' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:title', content: 'Apical Elagage' },
+      {
+        name: 'twitter:description',
+        content:
+          "L'entreprise Apical intervient pour les travaux de taille, d'élagage ou d'abattage de vos arbres dans le finistère.Z",
+      },
+      { name: 'twitter:url', content: 'https://www.apical-elagage-29.fr' },
+      { name: 'twitter:image', content: '/apical-black-logo' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'canonical', href: 'https://www.apical-elagage-29.fr' },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

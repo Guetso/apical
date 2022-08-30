@@ -2,19 +2,26 @@
   <main class="carousel">
     <LayoutNavMain />
 
-    <header class="card card-1">
+    <header class="card card-1 pt-10">
       <BlocsTitle />
     </header>
 
-    <section class="card card-2">
-      <aside>
-        <p class="text-center p-2">Site actuellement en construction</p>
-      </aside>
-      <BlocsContactMe />
-    </section>
+    <div class="card card-2">
+      <div class="ml-8">
+        <AssetsFloatImage
+          :src="'oak-leaf'"
+          :alt="'feuille de chaine'"
+          :width="6"
+          :top="-52"
+          :rotate="-110"
+        />
+      </div>
+      <BlocsIntroMe />
+    </div>
 
-    <!--     <section class="card"><h2></h2></section>
-    <section class="card"><h2></h2></section> -->
+    <!--     <div class="card card-3">
+      <BlocsMyServices />
+    </div> -->
   </main>
 </template>
 
@@ -31,12 +38,7 @@ export default {
   position: relative;
 }
 .card {
-  height: 600px;
   width: 100%;
-  > * {
-    margin: 80px auto;
-    width: 80%;
-  }
   &-1 {
     height: 400px;
     background: url(~assets/images/noise.png),
@@ -47,13 +49,22 @@ export default {
       );
   }
   &-2 {
-    border-radius: 147px 337px / 133px 99px;
+    padding: 4rem 5%;
+    border-radius: 147px 337px / 119px 99px;
     position: absolute;
     background-color: white;
     top: 290px;
   }
-}
-aside {
-  border: solid 1px black;
+  /*   &-3 {
+    padding: 4rem 5%;
+    border-radius: 147px 337px / 119px 99px;
+    position: absolute;
+    background: radial-gradient(
+      circle at -1% 57.5%,
+      rgb(19, 170, 82) 0%,
+      rgb(0, 102, 43) 90%
+    );
+    top: 600px;
+  } */
 }
 </style>
