@@ -10,7 +10,10 @@
       <strong class="text-5xl title mt-3 font-sans font-bold">APICAL</strong>
     </h1>
 
-    <div class="mt-5 uppercase tracking-wider">Arboriste grimpeur</div>
+    <h2 class="mt-5 uppercase tracking-wider">
+      Arboriste grimpeur <br />
+      dans le <em>Finistère</em>
+    </h2>
   </div>
 </template>
 

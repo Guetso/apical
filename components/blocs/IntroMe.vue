@@ -1,12 +1,14 @@
 <template>
   <section class="w-full">
     <h2 class="font-semibold text-xl">Qu'est ce qu'Apical ?</h2>
-    <p class="center my-2">
+    <p class="center my-2 text-justify">
       Je propose mes services d'<em>élagage</em>, de <em>taille</em> et d'<em
         >abattage</em
       >
-      de vos arbres sur toutes les communes du
-      <strong>Finistère sud</strong> que vous soyez un professionel ou un
+      de vos arbres sur toutes les communes de
+      <strong>Fouesnant</strong>, <strong>Bénodet</strong>,
+      <strong>Combrit</strong>, <strong>Gouesnach</strong> et
+      <strong>Quimper</strong>, que vous soyez un professionel ou un
       particulier.
     </p>
     <div class="flex flex-col justify-between items-center my-4">
@@ -26,8 +28,8 @@
         </ActivityCard>
       </div>
     </div>
-    <p>
-      Pour toutes demandes de renseignements ou de devis, n'hésitez pas à me
+    <p class="center my-2 text-justify">
+      Pour toutes demandes de renseignements ou de devis n'hésitez pas à me
       contacter.
     </p>
   </section>
