@@ -1,5 +1,8 @@
 <template>
-  <div id="activity" :class="'relative flex justify-center items-center' + ' ' + `h-${height}`">
+  <div
+    id="activity"
+    :class="'relative flex justify-center items-center h-full'"
+  >
     <img :src="require(`~/assets/images/${imgSrc}`)" :alt="imgAlt" />
     <div class="legend text-center absolute bottom-2 left-4 right-4">
       <slot></slot>
@@ -17,10 +20,6 @@ export default {
     imgAlt: {
       type: String,
       required: true,
-    },
-    height: {
-      type: Number,
-      default: 52,
     },
   },
 }

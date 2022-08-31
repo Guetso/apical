@@ -10,17 +10,17 @@
       particulier.
     </p>
     <div class="flex flex-col justify-between items-center my-4">
-      <div class="w-52 my-2">
+      <div class="w-52 h-52 my-2">
         <ActivityCard img-src="flatTree.png" img-alt="Un arbre">
           <strong>Taille</strong> &#x26; <strong>élagage</strong>
         </ActivityCard>
       </div>
-      <div class="w-52 my-2">
+      <div class="w-52 h-52 my-2">
         <ActivityCard img-src="souche.png" img-alt="Un arbre">
           <strong>Abattage</strong>
         </ActivityCard>
       </div>
-      <div class="w-52 my-2">
+      <div class="w-52 h-52 my-2">
         <ActivityCard img-src="broyeur.png" img-alt="Un arbre">
           <strong>Broyage</strong>
         </ActivityCard>
