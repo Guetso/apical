@@ -19,11 +19,14 @@ export default {
   align-items: center;
   position: relative;
   margin: 9% auto;
-  overflow-x: clip;
   .logo {
     position: absolute;
     top: -165px;
-    width: 46rem;
+    max-width: 100%;
+    overflow: hidden;
+    img {
+      width: 46rem;
+    }
   }
 }
 </style>
