@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <div class="container w-full sm:w-5/6 lg:w-full">
+    <div class="container w-full">
       <AssetsApicalLogo :color="'#00662b'" class="apical-logo" />
-      <div class="menu-icon">
+      <div class="menu-icon" @click="openModal">
         <div class="icon">
           <div></div>
           <div></div>
@@ -14,7 +14,14 @@
 </template>
 
 <script>
-export default {}
+import { EventBus } from '~/plugins/event-bus'
+export default {
+  methods: {
+    openModal() {
+      EventBus.$emit('openModal')
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -39,6 +46,8 @@ nav {
       border-radius: 0px 129px 129px 131px;
     }
     .menu-icon {
+      z-index: 1;
+      cursor: pointer;
       border-radius: 129px;
       background-color: #d4dbd3;
       position: absolute;
