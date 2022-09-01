@@ -11,7 +11,7 @@
       <strong>Quimper</strong>, que vous soyez un professionel ou un
       particulier.
     </p>
-    <div class="flex flex-col justify-between items-center my-4">
+    <div class="flex flex-col sm:flex-row flex-wrap justify-around items-center my-4">
       <div class="w-52 h-52 my-2">
         <ActivityCard img-src="flatTree.png" img-alt="Un arbre">
           <strong>Taille</strong> &#x26; <strong>élagage</strong>

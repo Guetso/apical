@@ -36,6 +36,9 @@ export default {
   border-radius: 26px;
   padding: 1.5rem;
   padding-top: 0rem;
+  transition: box-shadow;
+
+  box-shadow: 0px 8px 17px -3px rgba(0, 0, 0, 0.75);
 }
 .legend {
   border-radius: 13px;

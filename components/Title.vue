@@ -7,6 +7,7 @@
       <strong class="uppercase text-xl mt-5 tracking-wide">
         élagage, taille, abattage
       </strong>
+      <br>
       <strong class="text-5xl title mt-3 font-sans font-bold">APICAL</strong>
     </h1>
 

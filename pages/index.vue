@@ -1,28 +1,40 @@
 <template>
-  <main class="carousel">
+  <div class="carousel">
     <LayoutNavMain />
 
     <header class="card card-1 pt-10">
       <BlocsTitle />
     </header>
 
-    <div class="card card-2">
-      <div class="ml-8">
-        <AssetsFloatImage
-          :src="'oak-leaf'"
-          :alt="'feuille de chaine'"
-          :width="6"
-          :top="-52"
-          :rotate="-110"
-        />
+    <main class="absolute top-3/4">
+      <div class="card card-2">
+        <div class="relative">
+          <AssetsFloatImage
+            :src="'oak-leaf'"
+            :alt="'feuille de chaine'"
+            :width="6"
+            :top="-102"
+            :rotate="-110"
+          />
+        </div>
+        <BlocsIntroMe />
       </div>
-      <BlocsIntroMe />
-    </div>
 
-    <!--     <div class="card card-3">
-      <BlocsMyServices />
-    </div> -->
-  </main>
+      <div class="card card-3">
+        <div class="relative">
+          <AssetsFloatImage
+            :src="'oak-leaf'"
+            :alt="'feuille de chaine'"
+            :width="6"
+            :top="-80"
+            :right="0"
+            :rotate="18"
+          />
+        </div>
+        <BlocsWhoAmI />
+      </div>
+    </main>
+  </div>
 </template>
 
 <script>
@@ -32,6 +44,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+header {
+  height: 392px;
+}
 .carousel {
   display: flex;
   flex-direction: column;
@@ -40,7 +55,7 @@ export default {
 .card {
   width: 100%;
   &-1 {
-    height: 400px;
+    /*     height: 400px; */
     background: url(~assets/images/noise.png),
       radial-gradient(
         circle at -1% 57.5%,
@@ -50,21 +65,17 @@ export default {
   }
   &-2 {
     padding: 4rem 5%;
-    border-radius: 147px 337px / 119px 99px;
-    position: absolute;
+    border-radius: 147px 337px / 103px 99px;
+    /*     position: absolute; */
     background-color: white;
-    top: 290px;
+    /*     top: 290px; */
   }
-  /*   &-3 {
-    padding: 4rem 5%;
-    border-radius: 147px 337px / 119px 99px;
-    position: absolute;
-    background: radial-gradient(
-      circle at -1% 57.5%,
-      rgb(19, 170, 82) 0%,
-      rgb(0, 102, 43) 90%
-    );
-    top: 600px;
-  } */
+  &-3 {
+    padding: 5rem 5% 4rem 5%;
+    border-radius: 337px 147px / 119px 99px;
+    /*     position: absolute; */
+    background-color: white;
+    /*     top: 600px; */
+  }
 }
 </style>

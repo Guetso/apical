@@ -26,6 +26,10 @@ export default {
       type: Number,
       default: 0,
     },
+    right: {
+      type: Number,
+      default: null,
+    },
     rotate: {
       type: Number,
       default: 0,
@@ -36,6 +40,7 @@ export default {
       return {
         '--width': this.width + 'rem',
         '--top': this.top + 'px',
+        '--right': this.right + 'px',
         '--rotate': this.rotate + 'deg',
       }
     },
@@ -47,6 +52,7 @@ export default {
 .image {
   position: absolute;
   top: var(--top);
+  right: var(--right);
   width: var(--width);
   transform: rotate(var(--rotate));
 }
