@@ -3,7 +3,7 @@
     <h2 class="font-semibold text-xl">Qui suis-je ?</h2>
     <p class="center my-2 text-justify">
       Après quinze ans dans le domaine maritime il m a parut temps de poser mes
-      sacs et revenir a mes racines en Finistère sud. J'ai obtenu le Certificat
+      sacs et revenir à mes racines en Finistère sud. J'ai obtenu le Certificat
       de Spécialisation <em>arboriste-élagueur</em> en 2022 après avoir suivi
       une formation au centre du Gros Chêne (Pontivy) et créé la société APICAL.
     </p>
