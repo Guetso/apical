@@ -24,7 +24,7 @@
       </div>
       <div class="w-52 h-52 my-2">
         <ActivityCard img-src="broyeur.png" img-alt="Un arbre">
-          <strong>Broyage</strong>
+          <strong>Rémanents</strong>
         </ActivityCard>
       </div>
     </div>

@@ -5,7 +5,14 @@
       Après quinze ans dans le domaine maritime il m a parut temps de poser mes
       sacs et revenir à mes racines en Finistère sud. J'ai obtenu le Certificat
       de Spécialisation <em>arboriste-élagueur</em> en 2022 après avoir suivi
-      une formation au centre du Gros Chêne (Pontivy) et créé la société APICAL.
+      une formation au centre de formation du
+      <a
+        class="underline underline-offset-1 text-green-800"
+        href="https://legroschene.fr/index.php"
+        target="_blank"
+        >Gros Chêne</a
+      >
+      (Pontivy) et créé la société APICAL.
     </p>
     <p class="center my-2 text-justify">
       Le Certificat de Spécialisation atteste d'une formation poussée à ce
