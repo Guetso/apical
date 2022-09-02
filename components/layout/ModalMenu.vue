@@ -1,7 +1,20 @@
 <template>
   <div id="modal">
-    <div @click="closeModal">X</div>
-    <div>COUCOU</div>
+    <div class="header flex justify-end">
+      <div
+        class="closeBtn p-4 cursor-pointer w-14 h-14 text-center text-3xl font-extrabold text-yellow-800"
+        @click="closeModal"
+      >
+        X
+      </div>
+    </div>
+    <div class="content h-4/5 flex justify-center items-center text-center">
+      <ul class="text-3xl uppercase text-white">
+        <li class="m-10">Apical ?</li>
+        <li class="m-10">Qui suis-je ?</li>
+        <li class="m-10">Me contacter</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -20,7 +33,7 @@ export default {
 #modal {
   overflow-y: hidden;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.555);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 50;
   top: 0;
   bottom: 0;
