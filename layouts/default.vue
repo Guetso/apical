@@ -15,9 +15,11 @@ export default {
   },
   mounted() {
     EventBus.$on('openModal', () => {
+      this.fixedBody()
       this.openModal()
     })
     EventBus.$on('closeModal', () => {
+      this.fluentBody()
       this.closeModal()
     })
   },
@@ -31,6 +33,21 @@ export default {
     },
     closeModal() {
       this.isModalOpen = false
+    },
+    fixedBody() {
+      const body = document.body
+      body.style.position = 'fixed'
+      body.style.top = '0'
+      body.style.left = '0'
+      body.style.right = '0'
+      body.style.height = '100vh'
+      body.style.overflowY = 'hidden'
+    },
+    fluentBody() {
+      const body = document.body
+      body.style.position = 'static'
+      body.style.height = '100%'
+      body.style.overflowY = ''
     },
   },
 }
