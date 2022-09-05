@@ -26,12 +26,26 @@
             :src="'oak-leaf'"
             :alt="'feuille de chaine'"
             :width="6"
-            :top="-80"
+            :top="-120"
             :right="0"
             :rotate="18"
           />
         </div>
         <BlocsWhoAmI />
+      </div>
+
+      <div class="card card-4">
+        <div class="relative">
+          <AssetsFloatImage
+            :src="'oak-leaf'"
+            :alt="'feuille de chaine'"
+            :width="6"
+            :top="-130"
+            :left="0"
+            :rotate="-110"
+          />
+        </div>
+        <BlocsContactMe />
       </div>
     </main>
   </div>
@@ -74,6 +88,13 @@ header {
   &-3 {
     padding: 5rem 5% 4rem 5%;
     border-radius: 337px 147px / 119px 99px;
+    /*     position: absolute; */
+    background-color: white;
+    /*     top: 600px; */
+  }
+  &-4 {
+    padding: 5rem 5% 4rem 5%;
+    border-radius: 147px 337px / 103px 99px;
     /*     position: absolute; */
     background-color: white;
     /*     top: 600px; */

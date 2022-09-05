@@ -30,6 +30,10 @@ export default {
       type: Number,
       default: null,
     },
+    left: {
+      type: Number,
+      default: null,
+    },
     rotate: {
       type: Number,
       default: 0,
@@ -40,6 +44,7 @@ export default {
       return {
         '--width': this.width + 'rem',
         '--top': this.top + 'px',
+        '--left': this.left + 'px',
         '--right': this.right + 'px',
         '--rotate': this.rotate + 'deg',
       }
@@ -53,6 +58,7 @@ export default {
   position: absolute;
   top: var(--top);
   right: var(--right);
+  left: var(--left);
   width: var(--width);
   transform: rotate(var(--rotate));
 }
