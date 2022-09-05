@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full">
+  <section id="services" class="w-full">
     <h2 class="font-semibold text-xl">Qu'est ce qu'Apical ?</h2>
     <p class="center my-2 text-justify">
       Je propose mes services d'<em>élagage</em>, de <em>taille</em> et d'<em
@@ -11,7 +11,9 @@
       <strong>Quimper</strong>, que vous soyez un professionel ou un
       particulier.
     </p>
-    <div class="flex flex-col sm:flex-row flex-wrap justify-around items-center my-4">
+    <div
+      class="flex flex-col sm:flex-row flex-wrap justify-around items-center my-4"
+    >
       <div class="w-52 h-52 my-2">
         <ActivityCard img-src="flatTree.png" img-alt="Un arbre">
           <strong>Taille</strong> &#x26; <strong>élagage</strong>

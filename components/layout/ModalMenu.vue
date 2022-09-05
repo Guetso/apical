@@ -10,9 +10,15 @@
     </div>
     <div class="content h-4/5 flex justify-center items-center text-center">
       <ul class="text-3xl uppercase text-white">
-        <li class="m-10">Apical ?</li>
-        <li class="m-10">Qui suis-je ?</li>
-        <li class="m-10">Me contacter</li>
+        <li class="m-10 cursor-pointer" @click="onClick('#services')">
+          Apical ?
+        </li>
+        <li class="m-10 cursor-pointer" @click="onClick('#whoAmI')">
+          Qui suis-je ?
+        </li>
+        <li class="m-10 cursor-pointer" @click="onClick('#contact')">
+          Me contacter
+        </li>
       </ul>
     </div>
   </div>
@@ -24,6 +30,10 @@ export default {
   methods: {
     closeModal() {
       EventBus.$emit('closeModal')
+    },
+    onClick(id) {
+      this.closeModal()
+      this.$router.push({ hash: id })
     },
   },
 }

@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full">
+  <section id="whoAmI" class="w-full">
     <h2 class="font-semibold text-xl">Qui suis-je ?</h2>
     <p class="center my-2 text-justify">
       Après quinze ans dans le domaine maritime il m a parut temps de poser mes
