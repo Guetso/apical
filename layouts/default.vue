@@ -2,6 +2,7 @@
   <div>
     <nuxt />
     <LayoutModalMenu v-if="isModalOpen" />
+    <LayoutTopBtn />
   </div>
 </template>
 
