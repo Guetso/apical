@@ -15,18 +15,18 @@ export default {
     }
   },
   mounted() {
-    EventBus.$on('openModal', () => {
+    EventBus.$on('openModalMenu', () => {
       this.fixedBody()
       this.openModal()
     })
-    EventBus.$on('closeModal', () => {
+    EventBus.$on('closeModalMenu', () => {
       this.fluentBody()
       this.closeModal()
     })
   },
   beforeDestroy() {
-    EventBus.$off('openModal')
-    EventBus.$off('closeModal')
+    EventBus.$off('openModalMenu')
+    EventBus.$off('closeModalMenu')
   },
   methods: {
     openModal() {

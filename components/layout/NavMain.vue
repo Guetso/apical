@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav id="NavBar">
     <div class="container w-full">
       <AssetsApicalLogo :color="'#00662b'" class="apical-logo" />
       <div class="menu-icon" @click="openModal">
@@ -18,7 +18,7 @@ import { EventBus } from '~/plugins/event-bus'
 export default {
   methods: {
     openModal() {
-      EventBus.$emit('openModal')
+      EventBus.$emit('openModalMenu')
     },
   },
 }
