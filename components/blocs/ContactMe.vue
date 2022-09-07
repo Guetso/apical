@@ -1,29 +1,32 @@
 <template>
   <section id="contact">
     <h2 class="font-semibold text-xl mb-4">Me contacter</h2>
-    <p class="mb-2">
-      Pour toutes demandes de renseignements ou de devis<span class="mx-2">
-        :
-      </span>
-    </p>
-    <div class="mb-2 pl-4">
-      <div>
-        <span class="mail" />
-        <a class="block-link" href="mailto:apical.elagage29@gmail.com">
-          <strong>apical.elagage29@gmail.com</strong>
-        </a>
+    <div class="lg:w-2/3 m-auto lg:text-center">
+      <p class="mb-2">
+        Pour toutes demandes de renseignements ou de devis<span class="mx-2">
+          :
+        </span>
+      </p>
+      <div class="mb-2 pl-4">
+        <div>
+          <span class="mail" />
+          <a class="block-link" href="mailto:apical.elagage29@gmail.com">
+            <strong class="w-12">apical.elagage29@gmail.com</strong>
+          </a>
+        </div>
+        <div>
+          <span class="phone" />
+          <a class="block-link" href="tel:+33687521947">
+            <strong>06 87 52 19 47</strong>
+          </a>
+        </div>
       </div>
-      <div>
-        <span class="phone" />
-        <a class="block-link" href="tel:+33687521947">
-          <strong>06 87 52 19 47</strong>
-        </a>
+      <div class="mb-8">
+        Ou contactez moi via le formulaire ci-dessous<span class="mx-2">:</span>
       </div>
     </div>
-    <div class="mb-8">
-      Ou contactez moi via le formulaire ci-dessous<span class="mx-2">:</span>
-    </div>
-    <div class="container">
+
+    <div class="container w-full max-w-lg">
       <form @submit="sendEmail">
         <label>Nom</label>
         <input
@@ -153,7 +156,6 @@ export default {
       #f65f0ed0 90%
     );
   padding: 53px;
-  width: 100%;
 }
 
 form {

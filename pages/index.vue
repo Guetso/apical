@@ -69,8 +69,15 @@ header {
 }
 .card {
   width: 100%;
+  @include breakpoint(medium) {
+    margin: auto;
+    width: 75%;
+  }
   &-1 {
-    /*     height: 400px; */
+    @include breakpoint(medium) {
+      margin: auto;
+      width: 100%;
+    }
     background: url(~assets/images/noise.png),
       radial-gradient(
         circle at -1% 57.5%,
