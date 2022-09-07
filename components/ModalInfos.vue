@@ -8,7 +8,25 @@
         X
       </div>
     </div>
-    <div class="header flex justify-end">YO</div>
+    <div class="border flex flex-col items-center">
+      <div class="w-52 h-52">
+        <ActivityCard img-src="flatTree.png" img-alt="Un arbre">
+          <strong>Taille</strong> &#x26; <strong>élagage</strong>
+        </ActivityCard>
+      </div>
+      <div class="w-0.5 h-20 bg-gray-100"></div>
+      <div class="w-4/5 h-0.5 bg-gray-100"></div>
+      <div class="w-4/5 flex justify-between">
+        <div class="w-0.5 h-20 bg-gray-100"></div>
+        <div class="w-0.5 h-20 bg-gray-100"></div>
+        <div class="w-0.5 h-20 bg-gray-100"></div>
+      </div>
+      <div class="w-11/12 flex justify-between text-white text-center">
+        <div class="border p-2 w-3/12">Sanitaire</div>
+        <div class="border p-2 w-3/12">Eclaircie</div>
+        <div class="border p-2 w-3/12">Adaptation</div>
+      </div>
+    </div>
   </div>
 </template>
 
