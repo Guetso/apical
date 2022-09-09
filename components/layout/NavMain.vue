@@ -1,7 +1,7 @@
 <template>
   <nav id="NavBar">
     <div class="container w-full">
-      <AssetsApicalLogo :color="'#00662b'" class="apical-logo" />
+      <NuxtLink to="/"><AssetsApicalLogo :color="'#00662b'" class="apical-logo" /></NuxtLink>
       <div class="menu-icon" @click="openModal">
         <div class="icon">
           <div></div>
@@ -26,6 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 nav {
+  z-index: 1;
   position: absolute;
   top: 0;
   right: 0;

@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel">
+  <div class="content">
     <LayoutNavMain />
 
     <header class="card card-1 pt-10">
@@ -47,6 +47,7 @@
         </div>
         <BlocsContactMe />
       </div>
+      <LayoutFooter />
     </main>
   </div>
 </template>
@@ -62,18 +63,20 @@ export default {
 header {
   height: 392px;
 }
-.carousel {
+.content {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 .card {
   width: 100%;
+  margin-bottom: 1rem;
   @include breakpoint(medium) {
-    margin: auto;
+    margin: auto auto 1rem auto;
     width: 75%;
   }
   &-1 {
+    overflow: hidden;
     @include breakpoint(medium) {
       margin: auto;
       width: 100%;
@@ -100,6 +103,10 @@ header {
     /*     top: 600px; */
   }
   &-4 {
+    margin-bottom: 5rem;
+    @include breakpoint(xmedium) {
+      margin-bottom: 2.5rem;
+    }
     padding: 5rem 5% 4rem 5%;
     border-radius: 147px 337px / 103px 99px;
     /*     position: absolute; */

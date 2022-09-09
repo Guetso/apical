@@ -33,7 +33,7 @@ export default {
     },
     onClick(id) {
       this.closeModal()
-      this.$router.push({ hash: id })
+      this.$router.push({ path: '/', hash: id })
     },
   },
 }
