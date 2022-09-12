@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="relative">
+    <LayoutHeader />
     <LayoutModalMenu v-if="isModalOpen" />
     <LayoutTopBtn />
+    <nuxt />
+    <LayoutFooter />
   </div>
 </template>
 
@@ -53,5 +55,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped></style>

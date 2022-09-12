@@ -1,55 +1,47 @@
 <template>
-  <div class="content">
-    <LayoutNavMain />
-
-    <header class="card card-1 pt-10">
-      <BlocsTitle />
-    </header>
-
-    <main class="absolute top-3/4">
-      <div class="card card-2">
-        <div class="relative">
-          <AssetsFloatImage
-            :src="'oak-leaf'"
-            :alt="'feuille de chaine'"
-            :width="6"
-            :top="-102"
-            :rotate="-110"
-          />
-        </div>
-        <BlocsIntroMe />
+  <main>
+    <div class="card card-2">
+      <div class="relative">
+        <AssetsFloatImage
+          :src="'oak-leaf'"
+          :alt="'feuille de chaine'"
+          :width="6"
+          :top="-102"
+          :rotate="-110"
+        />
       </div>
+      <BlocsIntroMe />
+    </div>
 
-      <div class="card card-3">
-        <div class="relative">
-          <AssetsFloatImage
-            :src="'oak-leaf'"
-            :alt="'feuille de chaine'"
-            :width="6"
-            :top="-120"
-            :right="0"
-            :rotate="18"
-          />
-        </div>
-        <BlocsWhoAmI />
+    <div class="card card-3">
+      <div class="relative">
+        <AssetsFloatImage
+          :src="'oak-leaf'"
+          :alt="'feuille de chaine'"
+          :width="6"
+          :top="-120"
+          :right="0"
+          :rotate="18"
+        />
       </div>
+      <BlocsWhoAmI />
+    </div>
 
-      <div class="card card-4">
-        <div class="relative">
-          <AssetsFloatImage
-            :src="'oak-leaf'"
-            :alt="'feuille de chaine'"
-            :width="6"
-            :top="-130"
-            :left="0"
-            :rotate="-110"
-          />
-        </div>
-        <BlocsContactMe />
+    <div class="card card-4">
+      <div class="relative">
+        <AssetsFloatImage
+          :src="'oak-leaf'"
+          :alt="'feuille de chaine'"
+          :width="6"
+          :top="-130"
+          :left="0"
+          :rotate="-110"
+        />
       </div>
-      <LayoutFooter />
-    </main>
-  </div>
+      <BlocsContactMe />
+    </div>
+    <!--    <LayoutFooter /> -->
+  </main>
 </template>
 
 <script>
@@ -81,12 +73,6 @@ header {
       margin: auto;
       width: 100%;
     }
-    background: url(~assets/images/noise.png),
-      radial-gradient(
-        circle at -1% 57.5%,
-        rgb(19, 170, 82) 0%,
-        rgb(0, 102, 43) 90%
-      );
   }
   &-2 {
     padding: 4rem 5%;
@@ -103,7 +89,6 @@ header {
     /*     top: 600px; */
   }
   &-4 {
-    margin-bottom: 5rem;
     @include breakpoint(xmedium) {
       margin-bottom: 2.5rem;
     }
