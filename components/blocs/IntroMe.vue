@@ -2,6 +2,10 @@
   <section id="services" class="w-full">
     <h2 class="font-semibold text-xl">Qu'est ce qu'Apical ?</h2>
     <p class="center my-2 text-justify">
+      Apical est une entreprise <em>fouesnantaise</em> spécialisée dans
+      l'entretien de vos <em>arbres</em>.
+    </p>
+    <p class="center my-2 text-justify">
       Je propose mes services d'<em>élagage</em>, de <em>taille</em> et d'<em
         >abattage</em
       >
@@ -11,6 +15,13 @@
       <strong>Quimper</strong>, que vous soyez un professionel ou un
       particulier.
     </p>
+    <p class="center my-2 text-justify">
+      Vous trouverez ci-dessous la liste de mes différentes prestations.<br />
+      Dans tous les cas n'hésitez pas à me
+      <a class="underline text-green-800" href="#contact">contacter</a>
+      en cas de doute ou de questions.
+    </p>
+    <h3 class="font-semibold text-l">Mes prestations</h3>
     <div
       class="flex flex-col sm:flex-row flex-wrap justify-center items-center my-4"
     >
@@ -319,7 +330,7 @@
     </div>
     <p class="center my-2 text-justify">
       Pour toutes demandes de renseignements ou de devis n'hésitez pas à me
-      <a class="underline text-cyan-600" href="#contact">contacter</a>.
+      <a class="underline text-green-800" href="#contact">contacter</a>.
     </p>
     <ModalInfos v-if="isModalOpen" />
   </section>
