@@ -1,38 +1,32 @@
 <template>
-  <div id="modal">
-    <div class="header flex justify-end">
+  <div id="modal" class="flex flex-col text-white">
+    <div class="header flex flex-col justify-between items-center h-2/5 mb-4">
       <div
-        class="closeBtn p-4 cursor-pointer w-14 h-14 text-center text-3xl font-extrabold text-yellow-800"
+        class="closeBtn self-end p-4 cursor-pointer w-14 h-14 text-center text-3xl font-extrabold text-yellow-800"
         @click="closeModal"
       >
         X
       </div>
-    </div>
-    <div class="border flex flex-col items-center">
-      <div class="w-52 h-52">
-        <ActivityCard img-src="flatTree.png" img-alt="Un arbre">
-          <strong>Taille</strong> &#x26; <strong>élagage</strong>
+      <div class="w-48 h-48 text-black">
+        <ActivityCard :img-src="imgSrc" :img-alt="'un arbre'">
+          <slot name="title" />
         </ActivityCard>
       </div>
-      <div class="w-0.5 h-20 bg-gray-100"></div>
-      <div class="w-4/5 h-0.5 bg-gray-100"></div>
-      <div class="w-4/5 flex justify-between">
-        <div class="w-0.5 h-20 bg-gray-100"></div>
-        <div class="w-0.5 h-20 bg-gray-100"></div>
-        <div class="w-0.5 h-20 bg-gray-100"></div>
-      </div>
-      <div class="w-11/12 flex justify-between text-white text-center">
-        <div class="border p-2 w-3/12">Sanitaire</div>
-        <div class="border p-2 w-3/12">Eclaircie</div>
-        <div class="border p-2 w-3/12">Adaptation</div>
-      </div>
     </div>
+    <div class="h-4/5 p-4"><slot name="content" /></div>
   </div>
 </template>
 
 <script>
 import { EventBus } from '~/plugins/event-bus'
 export default {
+  props: {
+    imgSrc: {
+      type: String,
+      required: false,
+      default: ''
+    },
+  },
   methods: {
     closeModal() {
       EventBus.$emit('closeModalInfos')
@@ -51,7 +45,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 50;
   top: 0;
-  bottom: 0;
+  height: 100vh;
   left: 0;
   right: 0;
 }

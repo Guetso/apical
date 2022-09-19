@@ -9,7 +9,7 @@
         class="nav-list hidden md:flex justify-around items-center w-full h-full uppercase text-white text-xl p-3"
       >
         <li><a class="relative" href="#services">apical</a></li>
-        <li><a class="relative" href="#whoAmI">qui sui-je ?</a></li>
+        <li><a class="relative" href="#whoAmI">qui suis-je ?</a></li>
         <li><a class="relative" href="#contact">me contacter</a></li>
       </ul>
     </div>

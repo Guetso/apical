@@ -2,7 +2,7 @@
   <section id="services" class="w-full">
     <h2 class="font-semibold text-xl">Qu'est ce qu'Apical ?</h2>
     <p class="center my-2 text-justify">
-      Apical est une entreprise <em>fouesnantaise</em> spécialisée dans
+      Apical Élagage est une entreprise <em>fouesnantaise</em> spécialisée dans
       l'entretien de vos <em>arbres</em>.
     </p>
     <p class="center my-2 text-justify">
@@ -21,318 +21,89 @@
       <a class="underline text-green-800" href="#contact">contacter</a>
       en cas de doute ou de questions.
     </p>
-    <h3 class="font-semibold text-l">Mes prestations</h3>
-    <div
-      class="flex flex-col sm:flex-row flex-wrap justify-center items-center my-4"
-    >
-      <div class="flex flex-col items-center">
-        <div class="w-52 h-52 my-2 cursor-pointer" @click="openFirst">
-          <ActivityCard img-src="flatTree.png" img-alt="Un arbre">
-            <strong>Taille</strong> &#x26; <strong>élagage</strong>
-          </ActivityCard>
-        </div>
-
-        <div
-          :class="firstOpened ? 'opened' : 'close'"
-          class="activities hidden w-full sm:flex flex-col items-center"
-        >
-          <div class="w-0.5 h-10 bg-gray-500"></div>
-          <div class="w-4/5 h-0.5 bg-gray-500"></div>
-          <div class="w-4/5 flex justify-between">
-            <div class="w-0.5 h-20 bg-gray-500"></div>
-            <div class="w-0.5 h-20 bg-gray-500"></div>
-            <div class="w-0.5 h-20 bg-gray-500"></div>
-          </div>
-          <div class="w-11/12 flex justify-between text-center mb-4 h-full">
-            <div class="activity relative border p-2">
-              <img
-                class="w-32"
-                src="~/assets/images/flatTree.png"
-                alt="un arbre"
-              />
-              <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
-                <strong>Sanitaire</strong>
-              </div>
-            </div>
-            <div class="activity relative border p-2">
-              <img
-                class="w-32"
-                src="~/assets/images/flatTree.png"
-                alt="un arbre"
-              />
-              <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
-                <strong>Eclaircie</strong>
-              </div>
-            </div>
-            <div class="activity relative border p-2">
-              <img
-                class="w-32"
-                src="~/assets/images/flatTree.png"
-                alt="un arbre"
-              />
-              <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
-                <strong>Adaptation</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        :class="firstOpened ? 'opened' : 'close'"
-        class="activities flex justify-start flex-col w-44 sm:hidden"
-      >
-        <div class="w-0.5 h-10 bg-gray-500"></div>
-        <div class="flex items-center border-l-2 border-gray-500">
-          <div class="w-10 h-0.5 bg-gray-500"></div>
-          <div class="activity relative border w-32 h-32 p-2">
-            <img
-              class="w-32"
-              src="~/assets/images/flatTree.png"
-              alt="un arbre"
-            />
-            <div class="legend absolute bottom-2 left-0 right-0 text-center">
-              <strong>Sanitaire</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-0.5 h-10 bg-gray-500"></div>
-        <div class="flex items-center border-l-2 border-gray-500">
-          <div class="w-10 h-0.5 bg-gray-500"></div>
-          <div class="activity relative border w-32 h-32 p-2">
-            <img
-              class="w-32"
-              src="~/assets/images/flatTree.png"
-              alt="un arbre"
-            />
-            <div class="legend absolute bottom-2 left-0 right-0 text-center">
-              <strong>Eclaircie</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-0.5 h-10 bg-gray-500"></div>
-        <div class="flex items-center border-l-2 border-gray-500">
-          <div class="w-10 h-0.5 bg-gray-500"></div>
-          <div class="activity relative border w-32 h-32 p-2">
-            <img
-              class="w-32"
-              src="~/assets/images/flatTree.png"
-              alt="un arbre"
-            />
-            <div class="legend absolute bottom-2 left-0 right-0 text-center">
-              <strong>Adaptation</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col items-center">
-        <div class="w-52 h-52 sm:my-2 mt-2 cursor-pointer" @click="openSecond">
-          <ActivityCard img-src="souche.png" img-alt="Un arbre">
-            <strong>Abattage</strong>
-          </ActivityCard>
-        </div>
-
-        <div
-          :class="secondOpened ? 'opened' : 'close'"
-          class="activities hidden sm:flex w-full flex-col items-center"
-        >
-          <div class="w-0.5 h-10 bg-gray-500"></div>
-          <div class="w-4/5 h-0.5 bg-gray-500"></div>
-          <div class="w-4/5 flex justify-between">
-            <div class="w-0.5 h-20 bg-gray-500"></div>
-            <div class="w-0.5 h-20 bg-gray-500"></div>
-            <div class="w-0.5 h-20 bg-gray-500"></div>
-          </div>
-          <div class="w-11/12 flex justify-between text-center mb-4 h-full">
-            <div
-              class="activity relative border w-[146px] h-[154px] p-2 flex justify-center items-start"
-            >
-              <img
-                class="w-32"
-                src="~/assets/images/souche.png"
-                alt="un arbre"
-              />
-              <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
-                <strong>Au pied</strong>
-              </div>
-            </div>
-            <div
-              class="activity relative border w-[146px] h-[154px] p-2 flex justify-center items-start"
-            >
-              <img
-                class="w-32"
-                src="~/assets/images/souche.png"
-                alt="un arbre"
-              />
-              <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
-                <strong>Par démontage</strong>
-              </div>
-            </div>
-            <div
-              class="activity relative border h-32 p-2 flex justify-center items-start"
-            >
-              <img
-                class="w-32"
-                src="~/assets/images/souche.png"
-                alt="un arbre"
-              />
-              <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
-                <strong>En rétention</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        :class="secondOpened ? 'opened' : 'close'"
-        class="activities flex justify-start flex-col w-44 sm:hidden"
-      >
-        <div class="w-0.5 h-10 bg-gray-500"></div>
-        <div class="flex items-center border-l-2 border-gray-500">
-          <div class="w-10 h-0.5 bg-gray-500"></div>
-          <div class="activity relative border w-32 h-32 p-2">
-            <img class="w-32" src="~/assets/images/souche.png" alt="un arbre" />
-            <div class="legend absolute bottom-2 left-0 right-0 text-center">
-              <strong>Au pied</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-0.5 h-10 bg-gray-500"></div>
-        <div class="flex items-center border-l-2 border-gray-500">
-          <div class="w-10 h-0.5 bg-gray-500"></div>
-          <div class="activity relative border w-32 h-32 p-2">
-            <img class="w-32" src="~/assets/images/souche.png" alt="un arbre" />
-            <div class="legend absolute bottom-2 left-0 right-0 text-center">
-              <strong>Par démontage</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-0.5 h-10 bg-gray-500"></div>
-        <div class="flex items-center border-l-2 border-gray-500">
-          <div class="w-10 h-0.5 bg-gray-500"></div>
-          <div class="activity relative border w-32 h-32 p-2">
-            <img class="w-32" src="~/assets/images/souche.png" alt="un arbre" />
-            <div class="legend absolute bottom-2 left-0 right-0 text-center">
-              <strong>En rétention</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col items-center">
-        <div class="w-52 h-52 my-2 cursor-pointer" @click="openThird">
-          <ActivityCard img-src="broyeur.png" img-alt="Un arbre">
-            <strong>Rémanents</strong>
-          </ActivityCard>
-        </div>
-
-        <div
-          :class="thirdOpened ? 'opened' : 'close'"
-          class="activities hidden sm:flex w-full flex-col items-center"
-        >
-          <div class="w-0.5 h-10 bg-gray-500"></div>
-          <div class="w-4/5 h-0.5 bg-gray-500"></div>
-          <div class="w-4/5 flex justify-between">
-            <div class="w-0.5 h-20 bg-gray-500"></div>
-            <div class="w-0.5 h-20 bg-gray-500"></div>
-            <div class="w-0.5 h-20 bg-gray-500"></div>
-          </div>
-          <div class="w-11/12 flex justify-between text-center mb-4 h-full">
-            <div class="activity relative border p-2">
-              <img
-                class="w-32"
-                src="~/assets/images/broyeur.png"
-                alt="un arbre"
-              />
-              <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
-                <strong>Broyage fin</strong>
-              </div>
-            </div>
-            <div class="activity relative border p-2">
-              <img
-                class="w-32"
-                src="~/assets/images/broyeur.png"
-                alt="un arbre"
-              />
-              <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
-                <strong>Bois de chauffe</strong>
-              </div>
-            </div>
-            <div class="activity relative border p-2">
-              <img
-                class="w-32"
-                src="~/assets/images/broyeur.png"
-                alt="un arbre"
-              />
-              <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
-                <strong>Evacuation</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        :class="thirdOpened ? 'opened' : 'close'"
-        class="activities flex justify-start flex-col w-44 sm:hidden"
-      >
-        <div class="w-0.5 h-10 bg-gray-500"></div>
-        <div class="flex items-center border-l-2 border-gray-500">
-          <div class="w-10 h-0.5 bg-gray-500"></div>
-          <div class="activity relative border w-32 h-32 p-2">
-            <img
-              class="w-32"
-              src="~/assets/images/broyeur.png"
-              alt="un arbre"
-            />
-            <div class="legend absolute bottom-2 left-0 right-0 text-center">
-              <strong>Broyage fin</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-0.5 h-10 bg-gray-500"></div>
-        <div class="flex items-center border-l-2 border-gray-500">
-          <div class="w-10 h-0.5 bg-gray-500"></div>
-          <div class="activity relative border w-32 h-32 p-2">
-            <img
-              class="w-32"
-              src="~/assets/images/broyeur.png"
-              alt="un arbre"
-            />
-            <div class="legend absolute bottom-2 left-0 right-0 text-center">
-              <strong>Bois de chauffe</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-0.5 h-10 bg-gray-500"></div>
-        <div class="flex items-center border-l-2 border-gray-500">
-          <div class="w-10 h-0.5 bg-gray-500"></div>
-          <div class="activity relative border w-32 h-32 p-2">
-            <img
-              class="w-32"
-              src="~/assets/images/broyeur.png"
-              alt="un arbre"
-            />
-            <div class="legend absolute bottom-2 left-0 right-0 text-center">
-              <strong>Evacuation</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h3 class="font-semibold mt-8 text-l">Mes prestations</h3>
+    <span class="italic text-sm">Cliquer sur une image pour plus détails</span>
+    <ServicesTree />
     <p class="center my-2 text-justify">
       Pour toutes demandes de renseignements ou de devis n'hésitez pas à me
       <a class="underline text-green-800" href="#contact">contacter</a>.
     </p>
-    <ModalInfos v-if="isModalOpen" />
+    <ModalInfos v-show="isModalOpen" :img-src="subjectPicture">
+      <template #title>
+        <div v-show="modalSubject === 1">
+          <strong>Taille</strong> &#x26; <strong>élagage</strong>
+        </div>
+        <div v-show="modalSubject === 2">
+          <strong>Abattage</strong>
+        </div>
+        <div v-show="modalSubject === 3">
+          <strong>Rémanents</strong>
+        </div>
+      </template>
+      <template #content>
+        <div v-show="modalSubject === 1">
+          <p class="mb-4 text-center">
+            Une recherche esthétique ou en réponse à des contraintes. Dans le
+            respect du végétal pour des arbres pérennes. La taille peut répondre
+            à différents objectifs:
+          </p>
+          <ul class="flex flex-col items-start w-2/3 m-auto">
+            <li class="m-2">
+              <strong class="font-bold">La taille sanitaire</strong>
+              : bois morts, branches cassées...
+            </li>
+            <li class="m-2">
+              <strong class="font-bold">La taille d'éclaircie</strong> :
+              recherche de lumière.
+            </li>
+            <li class="m-2">
+              <span class="font-bold">La taille d'adaptation</span>
+              : en réponse à toute type de contraintes (maison...).
+            </li>
+          </ul>
+        </div>
+
+        <div v-show="modalSubject === 2">
+          <p class="mb-4 text-center">
+            En fonction de l'arbre et de sa situation, plusieurs techniques
+            d'abattage peuvent être envisagées :
+          </p>
+          <ul class="flex flex-col items-start w-2/3 m-auto">
+            <li class="m-2">
+              <strong class="font-bold">Abattage au pied</strong>
+            </li>
+            <li class="m-2">
+              <strong class="font-bold">Abattage par démontage</strong>
+            </li>
+            <li class="m-2">
+              <span class="font-bold">Abattage en rétention</span>
+            </li>
+          </ul>
+        </div>
+
+        <div v-show="modalSubject === 3">
+          <p class="mb-4 text-center">
+            Les rémanents sont tous les éléments qu'il reste après
+            taille/abattage de l'arbre.
+          </p>
+          <ul class="flex flex-col items-start w-2/3 m-auto">
+            <li class="m-2">
+              <strong class="font-bold">Broyage fin</strong>
+              : permets d'obtenir des copeaux de bois, idéal pour le paillage.
+            </li>
+            <li class="m-2">
+              <strong class="font-bold">Débitage</strong> : pour bois de
+              chauffe.
+            </li>
+            <li class="m-2">
+              <span class="font-bold">Évacuation</span>
+              : Si vous ne souhaitez pas conserver les rémanents, ceux ci
+              peuvent être évacués.
+            </li>
+          </ul>
+        </div>
+      </template>
+    </ModalInfos>
   </section>
 </template>
 
@@ -342,15 +113,33 @@ export default {
   data() {
     return {
       isModalOpen: false,
+      modalSubject: null,
       offsetTop: null,
-      firstOpened: false,
-      secondOpened: false,
-      thirdOpened: false,
     }
+  },
+  computed: {
+    subjectPicture() {
+      let pictureName = ''
+      switch (this.modalSubject) {
+        case 1:
+          pictureName = 'flatTree.png'
+          break
+        case 2:
+          pictureName = 'souche.png'
+          break
+        case 3:
+          pictureName = 'broyeur.png'
+          break
+        default:
+          pictureName = 'flatTree.png'
+      }
+      return pictureName
+    },
   },
   mounted() {
     this.offsetTop = document.body.scrollTop
-    EventBus.$on('openModalInfos', () => {
+    EventBus.$on('openModalInfos', (x) => {
+      this.modalSubject = x
       this.fixedBody()
       this.openModal()
     })
@@ -364,19 +153,6 @@ export default {
     EventBus.$off('closeModalInfos')
   },
   methods: {
-    openFirst() {
-      this.firstOpened = !this.firstOpened
-    },
-    openSecond() {
-      this.secondOpened = !this.secondOpened
-    },
-    openThird() {
-      this.thirdOpened = !this.thirdOpened
-    },
-    /*     openDetail() {
-      this.offsetTop = window.pageYOffset.toString()
-      EventBus.$emit('openModalInfos')
-    }, */
     openModal() {
       this.isModalOpen = true
     },
@@ -404,30 +180,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.activities {
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 1000ms linear, opacity 200ms linear 500ms;
-  &.opened {
-    max-height: 500px;
-    opacity: 1;
-  }
-}
-
-.activity {
-  background: url(~assets/images/noise.png),
-    radial-gradient(
-      circle at -1% 57.5%,
-      rgb(19, 170, 82) 0%,
-      rgb(0, 102, 43) 90%
-    );
-  border-radius: 26px;
-}
-
-.legend {
-  border-radius: 13px;
-  background-color: #d8dfd0be;
-}
-</style>

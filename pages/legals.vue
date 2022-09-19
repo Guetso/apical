@@ -1,12 +1,12 @@
 <template>
   <div class="content flex flex-col">
     <LayoutNavMain />
-    <header class="overflow-hidden pt-10">
+    <!--     <header class="overflow-hidden pt-10">
       <BlocsTitle />
-    </header>
-    <div class="legals absolute">
-      <h3>Mentions Légales</h3>
-      <h4>1. Présentation du site.</h4>
+    </header> -->
+    <div class="legals">
+      <h3 class="text-xl mb-4 text-center">Mentions Légales</h3>
+      <h4 class="text-lg my-4">1. Présentation du site.</h4>
       <p>
         En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la
         confiance dans l'économie numérique, il est précisé aux utilisateurs du
@@ -24,7 +24,7 @@
         Development développeur de sites WordPress à Bordeaux.
       </p>
 
-      <h4>
+      <h4 class="text-lg my-4">
         2. Conditions générales d’utilisation du site et des services proposés.
       </h4>
       <p>
@@ -44,7 +44,7 @@
         d’en prendre connaissance.
       </p>
 
-      <h4>3. Description des services fournis.</h4>
+      <h4 class="text-lg my-4">3. Description des services fournis.</h4>
       <p>
         Le site Apical - Arboriste Grimpeur a pour objet de fournir une
         information concernant l’ensemble des activités de la société. Tristan
@@ -60,7 +60,9 @@
         apportées depuis leur mise en ligne.
       </p>
 
-      <h4>4. Limitations contractuelles sur les données techniques.</h4>
+      <h4 class="text-lg my-4">
+        4. Limitations contractuelles sur les données techniques.
+      </h4>
       <p>
         Le site utilise la technologie JavaScript. Le site Internet ne pourra
         être tenu responsable de dommages matériels liés à l’utilisation du
@@ -69,7 +71,7 @@
         navigateur de dernière génération mis-à-jour
       </p>
 
-      <h4>5. Propriété intellectuelle et contrefaçons.</h4>
+      <h4 class="text-lg my-4">5. Propriété intellectuelle et contrefaçons.</h4>
       <p>
         La société SAS Apical est propriétaire des droits de propriété
         intellectuelle ou détient les droits d’usage sur tous les éléments
@@ -84,7 +86,7 @@
         de Propriété Intellectuelle.
       </p>
 
-      <h4>6. Limitations de responsabilité.</h4>
+      <h4 class="text-lg my-4">6. Limitations de responsabilité.</h4>
       <p>
         La société SAS Apical ne pourra être tenu responsable des dommages
         directs et indirects causés au matériel de l’utilisateur, lors de
@@ -106,7 +108,7 @@
         soit le support utilisé (texte, photographie…).
       </p>
 
-      <h4>7. Gestion des données personnelles.</h4>
+      <h4 class="text-lg my-4">7. Gestion des données personnelles.</h4>
       <p>
         En France, les données personnelles sont notamment protégées par la loi
         n° 78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août 2004, l'article
@@ -142,7 +144,7 @@
         relative à la protection juridique des bases de données.
       </p>
 
-      <h4>8. Liens hypertextes et cookies.</h4>
+      <h4 class="text-lg my-4">8. Liens hypertextes et cookies.</h4>
       <p>
         Le site Apical - Arboriste Grimpeur contient un certain nombre de liens
         hypertextes vers d’autres sites, mis en place avec l’autorisation de la
@@ -153,21 +155,23 @@
         l’installation de cookie sur l’ordinateur de l’utilisateur.
       </p>
 
-      <h4>9. Droit applicable et attribution de juridiction.</h4>
+      <h4 class="text-lg my-4">
+        9. Droit applicable et attribution de juridiction.
+      </h4>
       <p>
         Tout litige en relation avec l’utilisation du site Apical - Arboriste
         Grimpeur est soumis au droit français. Il est fait attribution exclusive
         de juridiction aux tribunaux compétents de Paris.
       </p>
 
-      <h4>10. Les principales lois concernées.</h4>
+      <h4 class="text-lg my-4">10. Les principales lois concernées.</h4>
       <p>
         Loi n° 78-17 du 6 janvier 1978, notamment modifiée par la loi n°
         2004-801 du 6 août 2004 relative à l'informatique, aux fichiers et aux
         libertés. Loi n° 2004-575 du 21 juin 2004 pour la confiance dans
         l'économie numérique.
       </p>
-      <h4>11. Lexique.</h4>
+      <h4 class="text-lg my-4">11. Lexique.</h4>
       <p>
         Utilisateur : Internaute se connectant, utilisant le site susnommé.
         <br />

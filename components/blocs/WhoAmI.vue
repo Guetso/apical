@@ -10,9 +10,10 @@
         class="underline underline-offset-1 text-green-800"
         href="https://legroschene.fr/index.php"
         target="_blank"
+        rel="noopener"
         >Gros Chêne</a
       >
-      (Pontivy) et créé la société APICAL.
+      (Pontivy) et créé la société APICAL Élagage.
     </p>
     <p class="center my-2 text-justify">
       Le Certificat de Spécialisation atteste d'une formation poussée à ce
@@ -23,12 +24,12 @@
       <div class="mt-2">
         <span class="sign">Tristan JAN.</span>
         <br />
-        <span class="italic">Créateur d'Apical</span>
+        <span class="italic">Créateur d'Apical Élagage</span>
       </div>
       <div class="wrapper overflow-hidden w-44 h-44">
         <img
           src="~assets/images/tristan-jan_mini.jpg"
-          alt="Tristan Jan, créateur d'Apical"
+          alt="Tristan Jan, élagueur grimpeur"
           class="w-full"
         />
       </div>

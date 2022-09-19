@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Apical Elagage',
+    title: 'Apical Élagage',
     htmlAttrs: {
       lang: 'fr',
     },
@@ -15,27 +15,27 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          "L'entreprise Apical intervient pour les travaux de taille, d'élagage ou d'abattage de vos arbres sur les communes de Fouesnant, Bénodet, Gouesnach, Combrit et Quimper.",
+          "L'entreprise Apical Élagage intervient pour les travaux de taille, d'élagage ou d'abattage de vos arbres sur les communes de Fouesnant, Bénodet, Gouesnach, Combrit et Quimper.",
       },
       { name: 'Language', content: 'fr' },
       { name: 'format-detection', content: 'telephone=no' },
-      { property: 'og:title', content: 'Apical Elagage' },
+      { property: 'og:title', content: 'Apical Élagage' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://www.apical-elagage-29.fr' },
       { property: 'og:image', content: '/apical-black-logo.png' },
       {
         property: 'og:description',
         content:
-          "L'entreprise Apical intervient pour les travaux de taille, d'élagage ou d'abattage de vos arbres sur les communes de Fouesnant, Bénodet, Gouesnach, Combrit et Quimper.",
+          "L'entreprise Apical Élagage intervient pour les travaux de taille, d'élagage ou d'abattage de vos arbres sur les communes de Fouesnant, Bénodet, Gouesnach, Combrit et Quimper.",
       },
       { property: 'og:locale', content: 'fr_FR' },
-      { property: 'og:site_name', content: 'Apical Elagage' },
+      { property: 'og:site_name', content: 'Apical Élagage' },
       { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:title', content: 'Apical Elagage' },
+      { name: 'twitter:title', content: 'Apical Élagage' },
       {
         name: 'twitter:description',
         content:
-          "L'entreprise Apical intervient pour les travaux de taille, d'élagage ou d'abattage de vos arbres dsur les communes de Fouesnant, Bénodet, Gouesnach, Combrit et Quimper.",
+          "L'entreprise Apical Élagage intervient pour les travaux de taille, d'élagage ou d'abattage de vos arbres dsur les communes de Fouesnant, Bénodet, Gouesnach, Combrit et Quimper.",
       },
       { name: 'twitter:url', content: 'https://www.apical-elagage-29.fr' },
       { name: 'twitter:image', content: '/apical-black-logo.png' },
