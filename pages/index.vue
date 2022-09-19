@@ -48,6 +48,57 @@
 export default {
   name: 'IndexPage',
   layout: 'default',
+  head() {
+    const ariane = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'home',
+          item: 'https://www.apical-elagage-29.fr/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Legals',
+          item: 'https://www.apical-elagage-29.fr/legals',
+        },
+      ],
+    }
+
+    const oragnization = {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      logo: ['/apical-black-logo.png'],
+      name: 'Apical Élagage',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '89 RTE DE KERHALL',
+        addressLocality: 'CLOHARS-FOUESNANT',
+        addressRegion: 'BRITTANY',
+        postalCode: '29950',
+        addressCountry: 'FR',
+      },
+      url: 'https://www.apical-elagage-29.fr',
+      email: 'apical.elagage29@gmail.com',
+      telephone: '+33687521947',
+    }
+
+    return {
+      script: [
+        {
+          type: 'application/ld+json',
+          json: ariane,
+        },
+        {
+          type: 'application/ld+json',
+          json: oragnization,
+        },
+      ],
+    }
+  },
 }
 </script>
 

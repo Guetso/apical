@@ -112,7 +112,24 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
   ],
+
+  sitemap: {
+    path: '/sitemap.xml', // L'emplacement de votre fichier sitemap.
+    hostname: 'https://www.apical-elagage-29.fr', // L'adresse de votre site, que vous pouvez placer comme ici dans une variable d'environnement.
+    cacheTime: 1000 * 60 * 15, // La durée avant que le sitemap soit regénéré. Ici 15mn.
+    gzip: true,
+    generate: false, // Génère une version statique du sitemap quand activé. À utiliser avec nuxt generate.
+    exclude: [
+      // Les pages qu'on a pas trop envie de voir atterrir sur Google.
+    ],
+  },
+
+  robots: {
+    Sitemap: 'https://www.apical-elagage-29.fr/sitemap.xml',
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
