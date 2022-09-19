@@ -234,7 +234,7 @@
             <img
               class="w-32"
               src="~/assets/images/broyeur.png"
-              alt="un arbre"
+              alt="Un broyeur de branches"
             />
             <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
               <strong>Broyage fin</strong>
@@ -247,7 +247,7 @@
             <img
               class="w-32"
               src="~/assets/images/broyeur.png"
-              alt="un arbre"
+              alt="Un broyeur de branches"
             />
             <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
               <strong>Bois de chauffe</strong>
@@ -260,7 +260,7 @@
             <img
               class="w-32"
               src="~/assets/images/broyeur.png"
-              alt="un arbre"
+              alt="Un broyeur de branches"
             />
             <div class="legend absolute bottom-2 left-0 right-0 p-2 m-1">
               <strong>Evacuation</strong>
