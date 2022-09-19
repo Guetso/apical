@@ -1,8 +1,5 @@
 <template>
-  <div
-    id="activity"
-    :class="'relative flex justify-center items-center h-full'"
-  >
+  <div :class="'activity relative flex justify-center items-center h-full'">
     <img :src="require(`~/assets/images/${imgSrc}`)" :alt="imgAlt" />
     <div class="legend text-center absolute bottom-2 left-4 right-4">
       <slot></slot>
@@ -26,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#activity {
+.activity {
   background: url(~assets/images/noise.png),
     radial-gradient(
       circle at -1% 57.5%,
