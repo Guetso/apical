@@ -34,7 +34,7 @@ export default {
   align-items: center;
   position: relative;
   @include breakpoint(xmedium) {
-    margin: 4% auto;
+    margin: 2% auto;
   }
   .logo {
     position: absolute;

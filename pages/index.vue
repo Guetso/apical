@@ -40,7 +40,6 @@
       </div>
       <BlocsContactMe />
     </div>
-    <!--    <LayoutFooter /> -->
   </main>
 </template>
 
@@ -128,31 +127,29 @@ header {
   &-2 {
     padding: 4rem 5%;
     border-radius: 147px 337px / 103px 99px;
-    /*     position: absolute; */
     background-color: white;
-    /*     top: 290px; */
+    @include breakpoint(large) {
+      width: 50%;
+    }
   }
   &-3 {
     padding: 5rem 5% 4rem 5%;
     border-radius: 337px 147px / 119px 99px;
-    /*     position: absolute; */
     background-color: white;
-    /*     top: 600px; */
+    @include breakpoint(large) {
+      width: 45%;
+    }
   }
   &-4 {
     @include breakpoint(xmedium) {
       margin-bottom: 2.5rem;
     }
+    @include breakpoint(large) {
+      width: 45%;
+    }
     padding: 5rem 5% 4rem 5%;
     border-radius: 147px 337px / 103px 99px;
-    /*     position: absolute; */
     background-color: white;
-    /*     top: 600px; */
   }
 }
-/* .dd {
-  left: 15%;
-  right: 15%;
-  top: 85%;
-} */
 </style>

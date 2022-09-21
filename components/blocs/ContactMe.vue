@@ -1,20 +1,20 @@
 <template>
   <section id="contact">
     <h2 class="font-semibold text-xl mb-4">Me contacter</h2>
-    <div class="lg:w-2/3 m-auto lg:text-center">
+    <div class="lg:w-2/3 m-auto lg:text-center flex flex-col justify-center items-center">
       <p class="mb-2">
         Pour toutes demandes de renseignements ou de devis<span class="mx-2">
           :
         </span>
       </p>
-      <div class="mb-2 pl-4">
-        <div>
+      <div class="mb-2 pl-4 flex flex-col justify-center border w-4/5">
+        <div class="text-left">
           <span class="mail" />
           <a class="block-link" href="mailto:apical.elagage29@gmail.com">
             <strong class="w-12">apical.elagage29@gmail.com</strong>
           </a>
         </div>
-        <div>
+        <div class="text-left">
           <span class="phone" />
           <a class="block-link" href="tel:+33687521947">
             <strong>06 87 52 19 47</strong>
