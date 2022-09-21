@@ -17,12 +17,14 @@
     </p>
     <p class="center my-2 text-justify">
       Vous trouverez ci-dessous la liste de mes différentes prestations.<br />
-      Dans tous les cas n'hésitez pas à me
+      N'hésitez pas à me
       <a class="underline text-green-800" href="#contact">contacter</a>
       en cas de doute ou de questions.
     </p>
     <h3 class="font-semibold mt-8 text-l">Mes prestations</h3>
-    <span class="italic text-sm">Cliquer sur une image pour plus détails</span>
+    <span class="italic text-sm"
+      >Cliquer sur une image pour plus de détails</span
+    >
     <ServicesTree />
     <p class="center my-2 text-justify">
       Pour toutes demandes de renseignements ou de devis n'hésitez pas à me
