@@ -1,19 +1,23 @@
 <template>
   <div id="modal" class="flex flex-col text-white">
-    <div class="header flex flex-col justify-between items-center h-2/5 mb-4">
-      <div
-        class="closeBtn self-end p-4 cursor-pointer w-14 h-14 text-center text-3xl font-extrabold text-yellow-800"
-        @click="closeModal"
-      >
-        X
+    <div class="modalContainer h-full">
+      <div class="header flex flex-col justify-between items-center h-2/5 mb-4">
+        <div
+          class="closeBtn self-end p-4 cursor-pointer w-14 h-14 text-center text-3xl font-extrabold text-yellow-800"
+          @click="closeModal"
+        >
+          X
+        </div>
+        <div class="w-48 h-48 text-black">
+          <ActivityCard :img-src="imgSrc" :img-alt="'un arbre'">
+            <slot name="title" />
+          </ActivityCard>
+        </div>
       </div>
-      <div class="w-48 h-48 text-black">
-        <ActivityCard :img-src="imgSrc" :img-alt="'un arbre'">
-          <slot name="title" />
-        </ActivityCard>
+      <div class="h-4/5 p-4 2xl:w-5/12 2xl:m-auto">
+        <slot name="content" />
       </div>
     </div>
-    <div class="h-4/5 p-4"><slot name="content" /></div>
   </div>
 </template>
 
@@ -24,7 +28,7 @@ export default {
     imgSrc: {
       type: String,
       required: false,
-      default: ''
+      default: '',
     },
   },
   methods: {
@@ -40,7 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 #modal {
-  overflow-y: hidden;
+  overflow-y: scroll;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 50;
@@ -49,12 +53,4 @@ export default {
   left: 0;
   right: 0;
 }
-
-/* .fixed-body {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  overflow-y: hidden;
-} */
 </style>

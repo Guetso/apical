@@ -103,6 +103,12 @@
               peuvent être évacués.
             </li>
           </ul>
+
+          <img
+            class="rounded-lg w-80 md:w-5/12 mx-auto my-10"
+            src="~/assets/images/broyeur2.jpg"
+            alt=""
+          />
         </div>
       </template>
     </ModalInfos>
