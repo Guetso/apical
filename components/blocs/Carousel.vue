@@ -106,6 +106,7 @@ export default {
 <style lang="scss" scoped>
 .slide {
   border-radius: 5%;
+  padding: 10px;
 }
 .legend {
   margin-top: 0.5rem;

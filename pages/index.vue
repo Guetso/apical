@@ -173,7 +173,7 @@ header {
     @include breakpoint(large) {
       width: 45%;
     }
-    padding: 5rem 5% 4rem 5%;
+    padding: 5rem 9% 4rem 9%;
     border-radius: 147px 337px / 103px 99px;
     background-color: white;
   }
