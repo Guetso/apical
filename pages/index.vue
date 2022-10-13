@@ -13,7 +13,7 @@
       <BlocsIntroMe />
     </div>
 
-    <div class="card card-3">
+    <div class="card card-5">
       <div class="relative">
         <AssetsFloatImage
           :src="'oak-leaf'"
@@ -22,6 +22,20 @@
           :top="-120"
           :right="0"
           :rotate="18"
+        />
+        <BlocsCarousel />
+      </div>
+    </div>
+
+    <div class="card card-3">
+      <div class="relative">
+        <AssetsFloatImage
+          :src="'oak-leaf'"
+          :alt="'feuille de chaine'"
+          :width="6"
+          :top="-120"
+          :left="0"
+          :rotate="-110"
         />
       </div>
       <BlocsWhoAmI />
@@ -34,8 +48,8 @@
           :alt="'feuille de chaine'"
           :width="6"
           :top="-130"
-          :left="0"
-          :rotate="-110"
+          :right="0"
+          :rotate="18"
         />
       </div>
       <BlocsContactMe />
@@ -47,6 +61,7 @@
 export default {
   name: 'IndexPage',
   layout: 'default',
+
   head() {
     const ariane = {
       '@context': 'https://schema.org',
@@ -141,6 +156,17 @@ header {
     }
   }
   &-4 {
+    @include breakpoint(xmedium) {
+      margin-bottom: 2.5rem;
+    }
+    @include breakpoint(large) {
+      width: 45%;
+    }
+    padding: 5rem 5% 4rem 5%;
+    border-radius: 147px 337px / 103px 99px;
+    background-color: white;
+  }
+  &-5 {
     @include breakpoint(xmedium) {
       margin-bottom: 2.5rem;
     }
