@@ -7,7 +7,7 @@
         loop
         mouse-drag
         navigation-enabled
-        :pagination-active-color="'#00662b'"
+        :pagination-active-color="'#85c723'"
         :pagination-color="'#808080'"
         autoplay
         :autoplay-timeout="5000"

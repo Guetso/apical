@@ -63,6 +63,18 @@
               : en réponse à toute type de contraintes (maison...).
             </li>
           </ul>
+          <span>Avant :</span>
+          <img
+            class="rounded-lg w-80 md:w-5/12 mx-auto my-10"
+            src="~/assets/images/before.jpg"
+            alt="Une remorque remplie de copeaux de bois"
+          />
+          <span>Après :</span>
+          <img
+            class="rounded-lg w-80 md:w-5/12 mx-auto my-10"
+            src="~/assets/images/after.jpg"
+            alt="Une remorque remplie de copeaux de bois"
+          />
         </div>
 
         <div v-show="modalSubject === 2">
@@ -76,6 +88,11 @@
             </li>
             <li class="m-2">
               <strong class="font-bold">Abattage par démontage</strong>
+              <img
+                class="rounded-lg w-80 md:w-5/12 mx-auto my-10"
+                src="~/assets/images/demontage.jpg"
+                alt=""
+              />
             </li>
             <li class="m-2">
               <span class="font-bold">Abattage en rétention</span>
@@ -106,8 +123,8 @@
 
           <img
             class="rounded-lg w-80 md:w-5/12 mx-auto my-10"
-            src="~/assets/images/broyeur2.jpg"
-            alt=""
+            src="~/assets/images/broyeur.jpg"
+            alt="Une remorque remplie de copeaux de bois"
           />
         </div>
       </template>
