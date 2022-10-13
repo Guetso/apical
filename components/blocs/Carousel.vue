@@ -9,6 +9,7 @@
         navigation-enabled
         :pagination-active-color="'#00662b'"
         :pagination-color="'#808080'"
+        autoplay
         :autoplay-timeout="5000"
         center-mode
       >
