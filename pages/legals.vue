@@ -1,9 +1,5 @@
 <template>
   <div class="content flex flex-col">
-    <LayoutNavMain />
-    <!--     <header class="overflow-hidden pt-10">
-      <BlocsTitle />
-    </header> -->
     <div class="legals">
       <h3 class="text-xl mb-4 text-center">Mentions Légales</h3>
       <h4 class="text-lg my-4">1. Présentation du site.</h4>
