@@ -73,14 +73,14 @@
             <img
               class="rounded-lg w-80 lg:w-1/3 mx-auto my-8"
               src="~/assets/images/before.jpg"
-              alt="Une remorque remplie de copeaux de bois"
+              alt="Un arbre non taillé"
             />
             <span class="before hidden lg:block" />
             <span class="sm:ml-12 lg:hidden">Après :</span>
             <img
               class="after rounded-lg w-80 lg:w-1/3 mx-auto my-8"
               src="~/assets/images/after.jpg"
-              alt="Une remorque remplie de copeaux de bois"
+              alt="Un arbre taillé"
             />
           </div>
         </div>
@@ -105,7 +105,7 @@
           <img
             class="rounded-lg w-80 lg:w-1/4 mx-auto my-10"
             src="~/assets/images/demontage.jpg"
-            alt=""
+            alt="Un arbre entrain d'être abattu par découpage en billot"
           />
         </div>
 
