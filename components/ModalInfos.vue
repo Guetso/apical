@@ -1,6 +1,6 @@
 <template>
-  <div id="modal" class="flex flex-col text-white">
-    <div class="modalContainer h-full">
+  <div id="modal" class="text-white">
+    <div class="modalContainer flex flex-col h-full">
       <div class="header flex flex-col justify-between items-center h-2/5 mb-4">
         <div
           class="closeBtn self-end p-4 cursor-pointer w-14 h-14 text-center text-3xl font-extrabold text-yellow-800"
@@ -14,7 +14,7 @@
           </ActivityCard>
         </div>
       </div>
-      <div class="h-4/5 p-4 2xl:w-5/12 2xl:m-auto">
+      <div class="h-4/5 p-4 2xl:w-10/12 2xl:m-auto">
         <slot name="content" />
       </div>
     </div>
@@ -46,7 +46,7 @@ export default {
 #modal {
   overflow-y: scroll;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.932);
   z-index: 50;
   top: 0;
   height: 100vh;

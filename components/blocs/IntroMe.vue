@@ -63,18 +63,26 @@
               : en réponse à toute type de contraintes (maison...).
             </li>
           </ul>
-          <span>Avant :</span>
-          <img
-            class="rounded-lg w-80 md:w-5/12 mx-auto my-10"
-            src="~/assets/images/before.jpg"
-            alt="Une remorque remplie de copeaux de bois"
-          />
-          <span>Après :</span>
-          <img
-            class="rounded-lg w-80 md:w-5/12 mx-auto my-10"
-            src="~/assets/images/after.jpg"
-            alt="Une remorque remplie de copeaux de bois"
-          />
+
+          <div class="bg-white w-80 h-px mx-auto my-6" />
+
+          <div
+            class="flex flex-col lg:flex-row lg:justify-around lg:items-center"
+          >
+            <span class="sm:ml-12 lg:hidden">Avant :</span>
+            <img
+              class="rounded-lg w-80 lg:w-1/3 mx-auto my-8"
+              src="~/assets/images/before.jpg"
+              alt="Une remorque remplie de copeaux de bois"
+            />
+            <span class="before hidden lg:block" />
+            <span class="sm:ml-12 lg:hidden">Après :</span>
+            <img
+              class="after rounded-lg w-80 lg:w-1/3 mx-auto my-8"
+              src="~/assets/images/after.jpg"
+              alt="Une remorque remplie de copeaux de bois"
+            />
+          </div>
         </div>
 
         <div v-show="modalSubject === 2">
@@ -88,16 +96,17 @@
             </li>
             <li class="m-2">
               <strong class="font-bold">Abattage par démontage</strong>
-              <img
-                class="rounded-lg w-80 md:w-5/12 mx-auto my-10"
-                src="~/assets/images/demontage.jpg"
-                alt=""
-              />
             </li>
             <li class="m-2">
               <span class="font-bold">Abattage en rétention</span>
             </li>
           </ul>
+          <div class="bg-white w-80 h-px mx-auto my-6" />
+          <img
+            class="rounded-lg w-80 lg:w-1/4 mx-auto my-10"
+            src="~/assets/images/demontage.jpg"
+            alt=""
+          />
         </div>
 
         <div v-show="modalSubject === 3">
@@ -120,9 +129,9 @@
               peuvent être évacués.
             </li>
           </ul>
-
+          <div class="bg-white w-80 h-px mx-auto my-6" />
           <img
-            class="rounded-lg w-80 md:w-5/12 mx-auto my-10"
+            class="rounded-lg w-80 lg:w-1/4 mx-auto my-10"
             src="~/assets/images/broyeur.jpg"
             alt="Une remorque remplie de copeaux de bois"
           />
@@ -205,3 +214,23 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+li {
+  &::before {
+    @include picto('dot');
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: green;
+  }
+}
+
+.before {
+  &::after {
+    @include picto('right');
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: green;
+  }
+}
+</style>

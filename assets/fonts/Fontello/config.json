@@ -41,6 +41,18 @@
       "css": "phone",
       "code": 59395,
       "src": "fontawesome"
+    },
+    {
+      "uid": "81bb68665e8e595505272a746db07c7a",
+      "css": "dot-circled",
+      "code": 61842,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fb94e23ae1e7660aa63cc5f351ec7560",
+      "css": "right",
+      "code": 61816,
+      "src": "fontawesome"
     }
   ]
 }
