@@ -72,14 +72,14 @@
             <span class="sm:ml-12 lg:hidden">Avant :</span>
             <img
               class="rounded-lg w-80 lg:w-1/3 mx-auto my-8"
-              src="~/assets/images/before.jpg"
+              src="~/assets/images/arbre-non-elague-fouesnant.jpg"
               alt="Un arbre non taillé"
             />
             <span class="before hidden lg:block" />
             <span class="sm:ml-12 lg:hidden">Après :</span>
             <img
               class="after rounded-lg w-80 lg:w-1/3 mx-auto my-8"
-              src="~/assets/images/after.jpg"
+              src="~/assets/images/elagage-fouesnant.jpg"
               alt="Un arbre taillé"
             />
           </div>
@@ -104,7 +104,7 @@
           <div class="bg-white w-80 h-px mx-auto my-6" />
           <img
             class="rounded-lg w-80 lg:w-1/4 mx-auto my-10"
-            src="~/assets/images/demontage.jpg"
+            src="~/assets/images/abattage-arbre.jpg"
             alt="Un arbre entrain d'être abattu par découpage en billot"
           />
         </div>
