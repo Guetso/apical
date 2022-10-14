@@ -94,7 +94,7 @@ export default {
           key: 10,
           src: 'slide12.jpg',
           legend:
-            "Sur ce chantier de Gouesnach, beaucoup de pin à nettoyer, d'autres à abattre.",
+            "Sur ce chantier de Gouesnach, beaucoup de pins à nettoyer, d'autres à abattre.",
           alt: "Un élagueur au sommet d'un pin",
         },
       ],
