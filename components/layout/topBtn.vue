@@ -1,5 +1,5 @@
 <template>
-  <div class="topBtn cursor-pointer" @click="scrollToTop">
+  <div class="topBtn cursor-pointer right-5 bottom-5 sm:bottom-16" @click="scrollToTop">
     <div class="btn" />
   </div>
 </template>
@@ -19,8 +19,6 @@ export default {
 .topBtn {
   z-index: 1;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
   width: 48px;
   height: 48px;
   line-height: 48px;

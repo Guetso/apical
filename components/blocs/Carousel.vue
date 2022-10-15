@@ -38,20 +38,20 @@ export default {
         {
           key: 1,
           src: 'taille-arbre-gouesnach.jpg',
-          legend: "Chantier sur Pleuven, élagage d'un chêne.",
-          alt: "Photo d'un élagueur dans un chêne",
+          legend: "Chantier sur Pleuven, élagage d'un liquidambar.",
+          alt: "Photo d'un élagueur dans un arbre",
         },
         {
           key: 2,
           src: 'abattage-pin-foret-fouesnant.jpg',
           legend: 'À la Forêt-Fouesnant, préparation pour un abattage.',
-          alt: "Photo d'un pin élagué",
+          alt: "Photo d'un arbre élagué",
         },
         {
           key: 3,
           src: 'taille-arboriste.jpg',
-          legend: 'Le démontage de ce pin peut commencer.',
-          alt: "Elagueur en haut d'un pin",
+          legend: 'Le démontage de ce cyprès peut commencer.',
+          alt: "Elagueur en haut d'un arbre",
         },
         {
           key: 4,
@@ -62,8 +62,8 @@ export default {
         {
           key: 5,
           src: 'taille-elagage-fouesnant.jpg',
-          legend: 'Elagage sur Fouesnant.',
-          alt: 'Un élagueur procédant à un élagage',
+          legend: 'Abattage sur Fouesnant.',
+          alt: 'Un élagueur procédant à un abattage',
         },
         {
           key: 6,
@@ -94,7 +94,7 @@ export default {
           key: 10,
           src: 'taille-elagage-benodet.jpg',
           legend:
-            "Sur ce chantier de Gouesnach, beaucoup de pins à nettoyer, d'autres à abattre.",
+            "Sur ce chantier de Gouesnach, beaucoup de cyprès et d'épicéas à nettoyer, d'autres à abattre.",
           alt: "Un élagueur au sommet d'un pin",
         },
       ],
