@@ -77,8 +77,7 @@ export default {
   ],
 
   router: {
-    base: process.env.NODE_ENV === 'production' ? '/' : '/apical/',
-    trailingSlash: false,
+    base: process.env.NODE_ENV === 'production' ? '' : '/apical',
     // https://dev.to/dimer191996/nuxt-js-smooth-scrolling-with-hash-links-94a
     scrollBehavior: async (to, from, savedPosition) => {
       if (savedPosition) {
