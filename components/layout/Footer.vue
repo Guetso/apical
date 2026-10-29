@@ -4,7 +4,7 @@
   >
     <NuxtLink class="legals" to="/legals">Mentions Légales</NuxtLink>
     <div class="text-center">
-      © 2022 SAS Apical
+      © 2026 SAS Apical
       <div class="flex flex-col justify-center items-center">
         <div class="credits">
           <a
@@ -23,7 +23,9 @@
       </div>
     </div>
 
-    <div>Création Hugo Hémon</div>
+    <div class="credits">
+      <a href="https://hugohemon.fr">Création Hugo Hémon</a>
+    </div>
   </footer>
 </template>
 
